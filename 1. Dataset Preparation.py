@@ -1,10 +1,6 @@
 import pandas as pd
-import numpy as np
 import csv
-import os
-from openai import OpenAI
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
 
 # Constructor: load dataset, process dataset
 def import_data(file_name):
