@@ -1,3 +1,4 @@
+# Setup
 import pandas as pd
 import csv
 from sklearn.model_selection import train_test_split
@@ -44,7 +45,7 @@ def split_train_test(dataframe, train_ratio, test_ratio, random_state=17):
     return train, test
 
 # Load dataset, process dataset
-dataframe = import_data('/Users/anton.j.ma/Manip-IAP/.github/mentalmanip_con.csv')
+dataframe = import_data('/Users/anton.j.ma/Manip-IAP/mentalmanip_con.csv')
 total_counts = dataframe['Manipulative'].value_counts()
 print("------Total counts in dataset------")
 print(total_counts)
@@ -64,5 +65,5 @@ print("\n------Counts in the test set------")
 print(test_counts)
 
 # save the train set and test set as CSV
-train.to_csv('/Users/anton.j.ma/Manip-IAP/.github/train.csv', index=False)
-test.to_csv('/Users/anton.j.ma/Manip-IAP/.github/test.csv', index=False)
+train.to_csv('/Users/anton.j.ma/Manip-IAP/train.csv', index=False)
+test.to_csv('/Users/anton.j.ma/Manip-IAP/test.csv', index=False)
