@@ -41,4 +41,5 @@ def intent_p1(data):
 # Intent 1
 gpt_model = "gpt-4-1106-preview" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
 print("------Person1 Intent Using gpt-4-1106-preview------")
-intent_p1(test)
+intent1 = intent_p1(test)
+print(intent1)
