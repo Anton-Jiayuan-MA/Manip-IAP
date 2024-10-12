@@ -3,7 +3,7 @@ import pandas as pd
 from openai import OpenAI
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
 # API Key
-api_key = "sk-hBeAQRKWMQ2SDP89FKl07H0TrJpR9eAzv5JOiDRzbbT3BlbkFJLLIvw8y4m2N2i3F_H3vSpa3rBk58Yj9UdUmflWT5gA" # Use your own api key
+api_key = "sk-4GGGT4r0yD_5SZjcqLCzC9ONRDRG5CKFEb_q3G0GTAT3BlbkFJTTv5eIShVMiBP-ad9EuKW_mze2s3HptlKRPfJ_hgMA" # Use your own api key
 # Model Parameters
 client = OpenAI(api_key=api_key)
 # Import Dataset
@@ -48,7 +48,7 @@ def zeroshot_prediction(test_data):
         preds.append(pred)
         test_data.at[idx, 'Prediction'] = pred
     # Edit filename below using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
-    test_data.to_csv('/Users/anton.j.ma/Manip-IAP/zeroshot_prediction_gpt-4-1106-preview.csv', index=False) # Use your own path
+    test_data.to_csv('/Users/anton.j.ma/Manip-IAP/zeroshot_prediction_gpt-4-turbo.csv', index=False) # Use your own path
     # Performance Indicators
     accuracy = accuracy_score(targets, preds)
     precision = precision_score(targets, preds, zero_division=0)
@@ -69,6 +69,6 @@ def zeroshot_prediction(test_data):
     print(f"- False Negatives (FN) = {FN}")
 
 # Zeroshot Prompting
-gpt_model = "gpt-4-1106-preview" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
-print("------Baseline 1: Zeroshot Prompting Using gpt-4-1106-preview------")
+gpt_model = "gpt-4-turbo" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
+print("------Baseline 1: Zeroshot Prompting Using gpt-4-turbo------")
 zeroshot_prediction(test)

@@ -2,7 +2,7 @@
 import pandas as pd
 from openai import OpenAI
 # API Key
-api_key = "sk-hBeAQRKWMQ2SDP89FKl07H0TrJpR9eAzv5JOiDRzbbT3BlbkFJLLIvw8y4m2N2i3F_H3vSpa3rBk58Yj9UdUmflWT5gA" # Use your own api key
+api_key = "sk-4GGGT4r0yD_5SZjcqLCzC9ONRDRG5CKFEb_q3G0GTAT3BlbkFJTTv5eIShVMiBP-ad9EuKW_mze2s3HptlKRPfJ_hgMA" # Use your own api key
 # Model Parameters
 client = OpenAI(api_key=api_key)
 # Import Dataset
@@ -35,11 +35,11 @@ def intent_p1(data):
         )
         return response.choices[0].message.content
     data['Intent_p1'] = data['Dialogue'].apply(analyze_dialogue)
-    data.to_csv('/Users/anton.j.ma/Manip-IAP/intent1_gpt-4-1106-preview.csv', index=False)  # Use your own path
+    data.to_csv('/Users/anton.j.ma/Manip-IAP/intent1_gpt-4-turbo.csv', index=False)  # Use your own path
     return data
 
 # Intent 1
-gpt_model = "gpt-4-1106-preview" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
-print("------Person1 Intent Using gpt-4-1106-preview------")
+gpt_model = "gpt-4-turbo" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
+print("------Person1 Intent Using gpt-4-turbo------")
 intent1 = intent_p1(test)
 print(intent1)
