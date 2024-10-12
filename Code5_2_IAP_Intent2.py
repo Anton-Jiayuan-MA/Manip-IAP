@@ -35,11 +35,12 @@ def intent_p2(data):
         )
         return response.choices[0].message.content
     data['Intent_p2'] = data['Dialogue'].apply(analyze_dialogue)
-    data.to_csv('/Users/anton.j.ma/Manip-IAP/intent2_gpt-4-turbo.csv', index=False)  # Use your own path
+    # Edit filename below using 'gpt-4-1106-preview', 'gpt-3.5-turbo-0125'
+    data.to_csv('/Users/anton.j.ma/Manip-IAP/intent2_gpt-3.5-turbo-0125.csv', index=False)  # Use your own path
     return data
 
 # Intent 2
-gpt_model = "gpt-4-turbo" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
-print("------Person2 Intent Using gpt-4-turbo------")
+gpt_model = "gpt-3.5-turbo-0125" # Raplace it using 'gpt-4-1106-preview', 'gpt-3.5-turbo-0125'
+print("------Person2 Intent Using gpt-3.5-turbo-0125------")
 intent2 = intent_p2(test)
 print(intent2)

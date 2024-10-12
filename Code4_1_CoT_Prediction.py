@@ -48,7 +48,8 @@ def cot_prediction(test_data):
         pred = cot_prompting(dialogue)
         preds.append(pred)
         test_data.at[idx, 'Prediction'] = pred
-    test_data.to_csv('/Users/anton.j.ma/Manip-IAP/cot_prediction_gpt-4-turbo.csv', index=False) # Use your own path
+    # Edit filename below using 'gpt-4-1106-preview', 'gpt-3.5-turbo-0125'
+    test_data.to_csv('/Users/anton.j.ma/Manip-IAP/cot_prediction_gpt-3.5-turbo-0125.csv', index=False) # Use your own path
     # Performance Indicators
     accuracy = accuracy_score(targets, preds)
     precision = precision_score(targets, preds, zero_division=0)
@@ -69,6 +70,6 @@ def cot_prediction(test_data):
     print(f"- False Negatives (FN) = {FN}")
 
 # CoT Prompting
-gpt_model = "gpt-4-turbo" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
-print("------Baseline 3: CoT Prompting Using gpt-4-turbo------")
+gpt_model = "gpt-3.5-turbo-0125" # Raplace it using 'gpt-4-1106-preview', 'gpt-3.5-turbo-0125'
+print("------Baseline 3: CoT Prompting Using gpt-3.5-turbo-0125------")
 cot_prediction(test)

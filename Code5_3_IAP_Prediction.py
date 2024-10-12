@@ -8,8 +8,8 @@ api_key = "sk-4GGGT4r0yD_5SZjcqLCzC9ONRDRG5CKFEb_q3G0GTAT3BlbkFJTTv5eIShVMiBP-ad
 client = OpenAI(api_key=api_key)
 # Import Dataset
 test = pd.read_csv('/Users/anton.j.ma/Manip-IAP/test.csv') # Use your own path
-intent1 = pd.read_csv('/Users/anton.j.ma/Manip-IAP/intent1_gpt-4-1106-preview.csv') # Use your own path
-intent2 = pd.read_csv('/Users/anton.j.ma/Manip-IAP/intent2_gpt-4-1106-preview.csv') # Use your own path
+intent1 = pd.read_csv('/Users/anton.j.ma/Manip-IAP/intent1_gpt-3.5-turbo-0125.csv') # Use your own path
+intent2 = pd.read_csv('/Users/anton.j.ma/Manip-IAP/intent2_gpt-3.5-turbo-0125.csv') # Use your own path
 # Prepare Dataset
 test['Intent_p1'] = intent1['Intent_p1']
 test['Intent_p2'] = intent2['Intent_p2']
@@ -62,7 +62,8 @@ def iap_prediction(test_data):
         pred = iap_prompting(dialogue, intent_p1, intent_p2)
         preds.append(pred)
         test_data.at[idx, 'Prediction'] = pred
-    test_data.to_csv('/Users/anton.j.ma/Manip-IAP/iap_prediction_gpt-4-1106-preview.csv', index=False) # Use your own path
+    # Edit filename below using 'gpt-4-1106-preview', 'gpt-3.5-turbo-0125'
+    test_data.to_csv('/Users/anton.j.ma/Manip-IAP/iap_prediction_gpt-3.5-turbo-0125.csv', index=False) # Use your own path
     # Performance Indicators
     accuracy = accuracy_score(targets, preds)
     precision = precision_score(targets, preds, zero_division=0)
@@ -83,6 +84,6 @@ def iap_prediction(test_data):
     print(f"- False Negatives (FN) = {FN}")
 
 # IAP
-gpt_model = "gpt-4-1106-preview" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
-print("------Experiment: IAP Using gpt-4-1106-preview------")
+gpt_model = "gpt-3.5-turbo-0125" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
+print("------Experiment: IAP Using gpt-3.5-turbo-0125------")
 iap_prediction(test)
