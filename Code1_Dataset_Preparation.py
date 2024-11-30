@@ -45,7 +45,7 @@ def split_train_test(dataframe, train_ratio, test_ratio, random_state=17):
     return train, test
 
 # Load dataset, process dataset
-dataframe = import_data('/Users/anton.j.ma/Manip-IAP/mentalmanip_con.csv')
+dataframe = import_data('/Dataset/mentalmanip_con.csv')
 total_counts = dataframe['Manipulative'].value_counts()
 print("------Total counts in dataset------")
 print(total_counts)
