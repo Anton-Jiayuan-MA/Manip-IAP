@@ -84,5 +84,5 @@ def iap_prediction(test_data):
 
 # IAP
 gpt_model = "gpt-4-1106-preview"
-print("------Experiment: IAP Using gpt-4-1106-preview------")
+print("------Experiment: IAP------")
 iap_prediction(test)

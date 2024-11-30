@@ -70,5 +70,5 @@ def cot_prediction(test_data):
 
 # CoT Prompting
 gpt_model = "gpt-4-1106-preview"
-print("------Baseline 3: CoT Prompting Using gpt-4-1106-preview------")
+print("------Baseline 3: CoT Prompting------")
 cot_prediction(test)

@@ -40,6 +40,6 @@ def intent_p1(data):
 
 # Intent 1
 gpt_model = "gpt-4-1106-preview"
-print("------Person1 Intent Using gpt-4-1106-preview------")
+print("------Person1 Intent------")
 intent1 = intent_p1(test)
 print(intent1)

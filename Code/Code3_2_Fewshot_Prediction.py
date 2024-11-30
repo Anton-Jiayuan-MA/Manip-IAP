@@ -87,5 +87,5 @@ def fewshot_prediction(test_data, manip_examples, nonmanip_examples):
 
 # Fewshot Prompting
 gpt_model = "gpt-4-1106-preview"
-print("------Baseline 2: Fewshot Prompting Using gpt-4-1106-preview------")
+print("------Baseline 2: Fewshot Prompting------")
 fewshot_prediction(test, manip_examples, nonmanip_examples)

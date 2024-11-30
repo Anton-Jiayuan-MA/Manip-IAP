@@ -7,10 +7,10 @@ train = pd.read_csv('Dataset/train.csv') # Use your own path
 # Constructor: Example Selection
 def select_examples(data, k_manip, k_nonmanip):
     manip_list = data[data['Manipulative'] == 1].index.tolist()
-    # randomly select k_manip examples from manip_list
+    # Randomly select k_manip examples from manip_list
     selected_manip_idx = np.random.choice(manip_list, k_manip, replace=False)
     nonmanip_list = data[data['Manipulative'] == 0].index.tolist()
-    # randomly select k_nonmanip examples from nonmanip_list
+    # Randomly select k_nonmanip examples from nonmanip_list
     selected_nonmanip_idx = np.random.choice(nonmanip_list, k_nonmanip, replace=False)
     manip_examples = data.loc[selected_manip_idx]
     nonmanip_examples = data.loc[selected_nonmanip_idx]

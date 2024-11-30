@@ -69,5 +69,5 @@ def zeroshot_prediction(test_data):
 
 # Zeroshot Prompting
 gpt_model = "gpt-4-1106-preview"
-print("------Baseline 1: Zeroshot Prompting Using gpt-4-1106-preview------")
+print("------Baseline 1: Zeroshot Prompting------")
 zeroshot_prediction(test)

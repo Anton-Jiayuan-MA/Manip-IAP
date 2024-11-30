@@ -65,5 +65,5 @@ print("\n------Counts in the test set------")
 print(test_counts)
 
 # save the train set and test set as CSV
-train.to_csv('/Users/anton.j.ma/Manip-IAP/train.csv', index=False)
-test.to_csv('/Users/anton.j.ma/Manip-IAP/test.csv', index=False)
+train.to_csv('Dataset/train.csv', index=False)
+test.to_csv('Dataset/test.csv', index=False)
