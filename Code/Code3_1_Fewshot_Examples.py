@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 # Import Dataset
-train = pd.read_csv('/Users/anton.j.ma/Manip-IAP/train.csv') # Use your own path
+train = pd.read_csv('Dataset/train.csv') # Use your own path
 
 # Constructor: Example Selection
 def select_examples(data, k_manip, k_nonmanip):
@@ -16,7 +16,7 @@ def select_examples(data, k_manip, k_nonmanip):
     nonmanip_examples = data.loc[selected_nonmanip_idx]
     # Combine and export to CSV
     fewshot_examples = pd.concat([manip_examples, nonmanip_examples])
-    fewshot_examples.to_csv('/Users/anton.j.ma/Manip-IAP/fewshot_examples.csv', index=False) # Use your own path
+    fewshot_examples.to_csv('Dataset/fewshot_examples.csv', index=False) # Use your own path
     return manip_examples, nonmanip_examples
 
 # Select examples

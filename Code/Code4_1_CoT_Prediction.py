@@ -3,32 +3,20 @@ import pandas as pd
 from openai import OpenAI
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
 # API Key
-api_key = "sk-4GGGT4r0yD_5SZjcqLCzC9ONRDRG5CKFEb_q3G0GTAT3BlbkFJTTv5eIShVMiBP-ad9EuKW_mze2s3HptlKRPfJ_hgMA" # Use your own api key
+api_key = "xxxxxx" # Use your own api key
 # Model Parameters
 client = OpenAI(api_key=api_key)
 # Import Dataset
-test = pd.read_csv('/Users/anton.j.ma/Manip-IAP/test.csv') # Use your own path
-intent1 = pd.read_csv('/Users/anton.j.ma/Manip-IAP/intent1_gpt-3.5-turbo-0125.csv') # Use your own path
-intent2 = pd.read_csv('/Users/anton.j.ma/Manip-IAP/intent2_gpt-3.5-turbo-0125.csv') # Use your own path
-# Prepare Dataset
-test['Intent_p1'] = intent1['Intent_p1']
-test['Intent_p2'] = intent2['Intent_p2']
-print(test.head())
+test = pd.read_csv('Dataset/test.csv') # Use your own path
 
-# Constructor: Two-intent Prompting
-def iap_prompting(dialogue, intent_p1, intent_p2):
-    # system prompt
+# Constructor: CoT Prompting
+def cot_prompting(dialogue):
     system_prompt = """
-    I will provide you with a dialogue \
-    and intent of person1, \
-    and intent of person2. \
-    Please carefully analyze the dialogue and intents, \
-    and determine if it contains elements of mental manipulation. \
-    Just answer with 'Yes' or 'No', \
-    and don't add anything else. \n
+    I will provide you with a dialogue. \
+    Please determine if it contains elements of mental manipulation. \
+    Just answer with 'Yes' or 'No', and don't add anything else. \
+    Let's think step by step. \n
     """
-    # user prompt
-    user_input = f"{dialogue} {intent_p1} {intent_p2}"
     response = client.chat.completions.create(
         model=gpt_model,
         temperature=0.1,
@@ -41,7 +29,7 @@ def iap_prompting(dialogue, intent_p1, intent_p2):
             },
             {
                 "role": "user",
-                "content": user_input
+                "content": dialogue,
             }
         ]
     )
@@ -51,19 +39,16 @@ def iap_prompting(dialogue, intent_p1, intent_p2):
     elif 'no' in res.lower():
         return 0
 
-# Constructor: IAP Prediction
-def iap_prediction(test_data):
+# Constructor: CoT Prediction
+def cot_prediction(test_data):
     targets = [int(v) for v in test_data['Manipulative'].values]
     preds = []
     for idx, row in test_data.iterrows():
-        intent_p1 = row['Intent_p1']
-        intent_p2 = row['Intent_p2']
         dialogue = row['Dialogue']
-        pred = iap_prompting(dialogue, intent_p1, intent_p2)
+        pred = cot_prompting(dialogue)
         preds.append(pred)
         test_data.at[idx, 'Prediction'] = pred
-    # Edit filename below using 'gpt-4-1106-preview', 'gpt-3.5-turbo-0125'
-    test_data.to_csv('/Users/anton.j.ma/Manip-IAP/iap_prediction_gpt-3.5-turbo-0125.csv', index=False) # Use your own path
+    test_data.to_csv('Dataset/cot_prediction_gpt-4-1106-preview.csv', index=False) # Use your own path
     # Performance Indicators
     accuracy = accuracy_score(targets, preds)
     precision = precision_score(targets, preds, zero_division=0)
@@ -83,7 +68,7 @@ def iap_prediction(test_data):
     print(f"- False Positives (FP) = {FP}")
     print(f"- False Negatives (FN) = {FN}")
 
-# IAP
-gpt_model = "gpt-3.5-turbo-0125" # Raplace it using 'gpt-4-1106-preview', 'gpt-4', 'gpt-4-turbo'
-print("------Experiment: IAP Using gpt-3.5-turbo-0125------")
-iap_prediction(test)
+# CoT Prompting
+gpt_model = "gpt-4-1106-preview"
+print("------Baseline 3: CoT Prompting Using gpt-4-1106-preview------")
+cot_prediction(test)
