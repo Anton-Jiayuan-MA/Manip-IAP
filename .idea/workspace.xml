@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f0e0906c-99d3-465e-9627-186f63d3fd43" name="Changes" comment="Edit on 1 Dec 2024">
+      <change afterPath="$PROJECT_DIR$/Image/FN and FP Comparison.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Human Evaluation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/IAP Overall Framework.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Result.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Anton-Jiayuan-MA&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9a182023-16c8-4045-9b9a-d904eae58ea4" />
+        <option name="url" value="git@github.com:Anton-Jiayuan-MA/Manip-IAP.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2n9OxqOGJcoLfZVxJiXnTwmCvYh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.1. Dataset Preparation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.123.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code1_Dataset_Preparation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code2_1_Zeroshot_Prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code3.1.1_Execution_Zeroshot_Prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code3_1_1_Execution_Zeroshot_Prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code3_1_Fewshot_Examples.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code3_2_Fewshot_Prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code4_1_CoT_Prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code5_1_IAP_Intent1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code5_2_IAP_Intent2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code5_3_IAP_Prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Dataset Preparation.executor&quot;: &quot;Run&quot;,
+    &quot;Python._client.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/anton.j.ma/Manip-IAP/Dataset&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.platform.ide.impl.presentationAssistant.PresentationAssistantConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Dataset" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Dataset" />
+      <recent name="$PROJECT_DIR$/Code" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c69650fc56ca-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15619.17" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0e0906c-99d3-465e-9627-186f63d3fd43" name="Changes" comment="" />
+      <created>1728382074444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728382074444</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Change 1">
+      <option name="closed" value="true" />
+      <created>1728437706430</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728437706430</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change 2">
+      <option name="closed" value="true" />
+      <created>1728437739366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728437739366</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Change 2">
+      <option name="closed" value="true" />
+      <created>1728605375114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728605375114</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change 3">
+      <option name="closed" value="true" />
+      <created>1728616291600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728616291600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Change 4">
+      <option name="closed" value="true" />
+      <created>1728618329358</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728618329358</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Change 5">
+      <option name="closed" value="true" />
+      <created>1728723721439</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728723721439</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Change 5">
+      <option name="closed" value="true" />
+      <created>1728731576335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728731576335</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Change 6">
+      <option name="closed" value="true" />
+      <created>1728797616581</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728797616581</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Change 6">
+      <option name="closed" value="true" />
+      <created>1728797653515</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728797653515</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change 7">
+      <option name="closed" value="true" />
+      <created>1732952597338</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732952597338</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Change 8">
+      <option name="closed" value="true" />
+      <created>1732954419320</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732954419320</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Edit on 30 Nov 2024">
+      <option name="closed" value="true" />
+      <created>1732954963346</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732954963346</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Edit on 1 Dec 2024">
+      <option name="closed" value="true" />
+      <created>1732973049193</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732973049193</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Change 1" />
+    <MESSAGE value="Change 2" />
+    <MESSAGE value="Change 3" />
+    <MESSAGE value="Change 4" />
+    <MESSAGE value="Change 5" />
+    <MESSAGE value="Change 6" />
+    <MESSAGE value="Change 7" />
+    <MESSAGE value="Change 8" />
+    <MESSAGE value="Edit on 30 Nov 2024" />
+    <MESSAGE value="Edit on 1 Dec 2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit on 1 Dec 2024" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Code0_Prompting_Constructor.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Code/Code5_3_IAP_Prediction.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Code/Code2_1_Zeroshot_Prediction.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Code/Code3_1_Fewshot_Examples.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
