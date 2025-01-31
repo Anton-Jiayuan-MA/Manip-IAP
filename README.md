@@ -40,6 +40,6 @@ All users could run the code in this repository following the indices in the fil
   author={Jiayuan Ma and Hongbin Na and Zimu Wang and Yining Hua and Yuegen Liu and Wei Wang and Ling Chen},
   booktitle={International Conference on Computational Linguistics},
   year={2024},
-  url={https://api.semanticscholar.org/CorpusID:274638834}
+  url={https://aclanthology.org/2025.coling-main.616/}
 }
 ```
