@@ -35,11 +35,16 @@ All users could run the code in this repository following the indices in the fil
 ## 4. Citation
 
 ```
-@inproceedings{Ma2024DetectingCM,
+@inproceedings{ma-etal-2025-detecting,
   title={Detecting Conversational Mental Manipulation with Intent-Aware Prompting},
-  author={Jiayuan Ma and Hongbin Na and Zimu Wang and Yining Hua and Yuegen Liu and Wei Wang and Ling Chen},
-  booktitle={International Conference on Computational Linguistics},
-  year={2024},
+  author={Ma, Jiayuan and Na, Hongbin and Wang, Zimu and Hua, Yining and Liu, Yue and Wang, Wei and Chen, Ling},
+  editor={Rambow, Owen and Wanner, Leo and Apidianaki, Marianna and Al-Khalifa, Hend and Eugenio, Barbara Di and Schockaert, Steven},
+  booktitle={Proceedings of the 31st International Conference on Computational Linguistics},
+  month=jan,
+  year={2025},
+  address={Abu Dhabi, UAE},
+  publisher={Association for Computational Linguistics},
+  pages={9176--9183},
   url={https://aclanthology.org/2025.coling-main.616/}
 }
 ```
